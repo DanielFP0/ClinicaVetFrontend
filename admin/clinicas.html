@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administrador - Gerenciar Clínicas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="bg-primary text-white p-3 text-center">
+    <h1>Gerenciar Clínicas</h1>
+  </header>
+  <div class="container mt-4">
+    <h2>Lista de Clínicas</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>CNPJ</th>
+          <th>Endereço</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="clinicaTable">
+        <!-- Clínicas serão listadas aqui -->
+      </tbody>
+    </table>
+    <button class="btn btn-primary" onclick="addClinica()">Adicionar Clínica</button>
+  </div>
+  <script src="../assets/js/admin.js"></script>
+</body>
+</html>
